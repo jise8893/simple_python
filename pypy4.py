@@ -1,6 +1,6 @@
 import imaplib
 imap=imaplib.IMAP4_SSL('imap.gmail.com')
-imap.login('silanon65@gmail.com','passwd')
+imap.login('my_email','passwd')
 imap.select('inbox')
 result,data=imap.uid('search',None,'ALL')
 print(result,data)
